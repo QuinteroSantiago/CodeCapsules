@@ -68,7 +68,6 @@ class calculations
  
     void calcMeanTemp()
     {
-        if()
     }
 
     void calcTempCounts()
