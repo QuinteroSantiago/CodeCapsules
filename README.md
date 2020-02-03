@@ -2,7 +2,7 @@
 
 A repository for projects done in C++.
 
-## Projects Description
+## Project Descriptions
 * Baby Projects
 
   * Basic Programming Course that use basic array manipulations as well as introduction to classes and functions.
