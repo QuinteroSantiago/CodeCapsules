@@ -1,6 +1,6 @@
 # OOP_Projects
 
-A repository for projects done in C++ and Python
+A repository for projects done in Object-Oriented Languages such as C++ and Python
 
 ## Project Descriptions
 * Learning
