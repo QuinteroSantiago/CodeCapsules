@@ -2,7 +2,8 @@
 
 A repository for projects done in C++
 
-## Project Descriptions
+## Projects
+
 ### LinkedList
 This project implements a generic doubly linked list in C++. The LinkedList class provides functionalities to manipulate a linked list with various operations such as insertion, deletion, searching, and more.
 
@@ -71,3 +72,34 @@ reviews.cpp & reviews.h: Helper functions and declarations for evaluating review
 #### project3:
 
 planRoute.cpp: Plans the shortest route for a gLyft driver to visit planets based on their locations and names.
+
+### Health App
+
+#### SRS
+This directory contains the Software Requirements Specification (SRS) document for a health application.
+
+* File Structure
+  * Software Requirements Specification.MD: A comprehensive SRS document detailing the requirements for a health application.
+* Overview of SRS
+  * Introduction: Provides an overview of the document, its purpose, and the product scope.
+  * Product Overview: Describes the product's context, perspective, functions, constraints, user characteristics, assumptions, and dependencies.
+  * Requirements: Details the external interfaces, functional requirements, quality of service, compliance, design and implementation considerations, and verification methods.
+  * Appendixes: Contains additional information and references.
+
+#### diet_provider
+This directory contains the primary function for providing diet plans based on user input.
+
+* File Structure
+  * README.MD: Details the development process and functionalities of the diet provider.
+  * main.cpp: Main program that interacts with the user to create an ideal diet plan.
+  * legacy_systems/first_incomplete_prototype.cpp: An early prototype of the diet provider.
+* Overview of diet_provider
+**Process**:
+
+Creates a list of vectors. Determines calories needed based on user input. Allows the user to choose their weight goal (gain, lose, or maintain). Creates the ideal diet plan. Uses linear search to find the best diet from a database.
+
+#### workout_routine
+This directory contains the workout routine generator.
+
+* File Structure
+  * main.cpp: Main program that generates a workout routine based on user input.
