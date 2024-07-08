@@ -1,105 +1,57 @@
-# OOP_Projects
+# CodeCapsules
 
-A repository for projects done in C++
+A mono repo for small but significant projects that are housed together for convenience and manageability.
 
 ## Projects
 
 ### LinkedList
-This project implements a generic doubly linked list in C++. The LinkedList class provides functionalities to manipulate a linked list with various operations such as insertion, deletion, searching, and more.
+
+This C++ project implements a generic doubly linked list, providing functionalities like insertion, deletion, and searching.
 
 #### File Structure
-* LinkedList.h: Contains the declaration and implementation of the LinkedList class.
-* main.cpp: Contains test cases to demonstrate the usage of the LinkedList class.
-* LinkedList Class Overview
-  * Node Structure: Each node contains a pointer to the previous node, a pointer to the next node, and the data.
-  * Constructors and Destructor:
-    * Default Constructor: Initializes an empty list.
-    * Destructor: Cleans up all nodes in the list.
-    * Copy Constructor: Creates a new list by copying an existing list.
-  * Accessors:
-    * Head(): Returns a pointer to the head node.
-    * Tail(): Returns a pointer to the tail node.
-    * NodeCount(): Returns the total number of nodes.
-    * Find(): Finds the first node with the specified data.
-    * FindAll(): Finds all nodes with the specified data.
-    * GetNode(): Returns the node at the specified index.
-  * Insertion:
-    * AddHead(): Adds a node at the head.
-    * AddTail(): Adds a node at the tail.
-    * AddNodesHead(): Adds multiple nodes at the head.
-    * AddNodesTail(): Adds multiple nodes at the tail.
-    * InsertAt(): Inserts a node at the specified index.
-    * InsertBefore(): Inserts a node before the specified node.
-    * InsertAfter(): Inserts a node after the specified node.
-  * Removal:
-    * RemoveHead(): Removes the head node.
-    * RemoveTail(): Removes the tail node.
-    * RemoveAt(): Removes the node at the specified index.
-    * Remove(): Removes nodes with the specified data.
-    * Clear(): Removes all nodes.
-  * Behaviors:
-    * PrintForward(): Prints the list from head to tail.
-    * PrintReverse(): Prints the list from tail to head.
-    * PrintForwardRecursive(): Recursively prints the list from head to tail.
-    * PrintReverseRecursive(): Recursively prints the list from tail to head.
-  * Operators:
-    * Assignment operator
-    * Equality operator
-    * Subscript operator
-### sf_labs
-This directory contains various small C++ projects and exercises, including:
+- `LinkedList.h`: Declarations and implementations for the LinkedList class.
+- `main.cpp`: Test cases demonstrating the LinkedList class usage.
 
-  * NovTemps.txt: Temperature readings for November.
-  * Sales.txt: Sales data for analysis.
-  * dice.cpp: A game of chance simulation using object-oriented principles.
-  * logicalOperators.cpp: A program to determine book club points based on books purchased.
-  * logicalSales.cpp: A program to find the division with the highest sales.
-  * percentages.cpp: A program to calculate and display the percentage of male and female students in a class.
-  * salesChart.cpp: A program to read sales data and display it as a bar chart.
+#### Features
+- **Node Management**: Supports default, copy constructors, and destructor.
+- **Access**: Methods to get the head, tail, and node count.
+- **Search**: Functions to find nodes by data or index.
+- **Insertion and Removal**: Methods to add and remove nodes at various positions.
+- **Utilities**: Includes methods to print the list in different orders, both iteratively and recursively.
+- **Operators**: Assignment, equality, and subscript operators are overloaded for enhanced usability.
+
+### sf_labs
+
+A collection of small C++ projects and exercises.
+
+- **Files**: Contains various data files and source codes like `dice.cpp` for simulations and `salesChart.cpp` for visual data representation.
 
 ### umich_projects
-This directory contains projects done as part of coursework at the University of Michigan, including:
 
-#### project1:
+Projects from coursework at the University of Michigan.
 
-brakeCoef.cpp: Calculates the optimal braking coefficient for a shuttle given initial velocity, air braking coefficient, and stopping distance.
-
-#### project2:
-
-evaluateReviews.cpp: Evaluates reviews and classifies them as truthful or deceptive based on keyword weights.
-reviews.cpp & reviews.h: Helper functions and declarations for evaluating reviews.
-
-#### project3:
-
-planRoute.cpp: Plans the shortest route for a gLyft driver to visit planets based on their locations and names.
+- **Project Descriptions**:
+  - `brakeCoef.cpp`: Calculates braking coefficients.
+  - `evaluateReviews.cpp`: Analyzes review data.
+  - `planRoute.cpp`: Plans routes for a fictional ride-sharing service on different planets.
 
 ### Health App
 
-#### SRS
-This directory contains the Software Requirements Specification (SRS) document for a health application.
+Comprehensive project including a detailed SRS and modules for diet planning and workout routines.
 
-* File Structure
-  * Software Requirements Specification.MD: A comprehensive SRS document detailing the requirements for a health application.
-* Overview of SRS
-  * Introduction: Provides an overview of the document, its purpose, and the product scope.
-  * Product Overview: Describes the product's context, perspective, functions, constraints, user characteristics, assumptions, and dependencies.
-  * Requirements: Details the external interfaces, functional requirements, quality of service, compliance, design and implementation considerations, and verification methods.
-  * Appendixes: Contains additional information and references.
+#### File Structure
+- **SRS**: Contains the Software Requirements Specification document.
+- **diet_provider**: Generates diet plans based on user goals.
+- **workout_routine**: Creates customized workout plans.
 
-#### diet_provider
-This directory contains the primary function for providing diet plans based on user input.
+### test-gpt-api
 
-* File Structure
-  * README.MD: Details the development process and functionalities of the diet provider.
-  * main.cpp: Main program that interacts with the user to create an ideal diet plan.
-  * legacy_systems/first_incomplete_prototype.cpp: An early prototype of the diet provider.
-* Overview of diet_provider
-**Process**:
+A project to test the ChatGPT API endpoints, ensuring robust interaction and response capabilities.
 
-Creates a list of vectors. Determines calories needed based on user input. Allows the user to choose their weight goal (gain, lose, or maintain). Creates the ideal diet plan. Uses linear search to find the best diet from a database.
+#### File Structure
+- `api_tests/`: Contains scripts for API testing.
+- `README.md`: Instructions and details about the API tests.
 
-#### workout_routine
-This directory contains the workout routine generator.
+### General Information
 
-* File Structure
-  * main.cpp: Main program that generates a workout routine based on user input.
+This repository serves as a central point for small-scale projects, facilitating easier maintenance, updates, and oversight. Each project is contained within its own directory with specific documentation on usage and contribution guidelines.
